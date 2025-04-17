@@ -69,4 +69,19 @@ void mergeSort(int low, int high)
         }
         k++; // lanjutkan ke elemen berikutnya
     }
+
+    // COMMIT 8: Menggabungkan sisa elemen array yang belum terurut
+    while (j <= high) // jika masih ada elemen di bagian kanan
+    {
+        B[k] = arr[j]; // salin elemen kanan
+        j++;
+        k++;
+    }
+
+    while (i <= mid) // jika masih ada elemen di bagian kiri
+    {
+        B[k] = arr[i]; // salin elemen kiri
+        i++;
+        k++;
+    }
 }
