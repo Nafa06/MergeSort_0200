@@ -49,5 +49,24 @@ void mergeSort(int low, int high)
     // step 3 - fungsi rekursi
     mergeSort(low, mid);      // step 3.a
     mergeSort(mid + 1, high); // step 3.b
-    
+
+    // COMMIT 7: Mengimplementasikan proses penggabungan array di mergeSort
+    int i = low;     // index untuk bagian kiri
+    int j = mid + 1; // index untuk bagian kanan
+    int k = low;     // index untuk array sementara
+
+    while (i <= mid && j <= high) // bandingkan elemen kiri dan kanan
+    {
+        if (arr[i] <= arr[j]) // jika elemen kiri lebih kecil
+        {
+            B[k] = arr[i];
+            i++;
+        }
+        else
+        {
+            B[k] = arr[j];
+            j++;
+        }
+        k++; // lanjutkan ke elemen berikutnya
+    }
 }
