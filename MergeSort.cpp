@@ -14,5 +14,14 @@ void input()
     {
         cout << "Masukkan Panjang element array : ";
         cin >> n;
+        // COMMIT 3: Memberikan batasan pada array
+        if (n <= 20)
+        {
+            break;
+        }
+        else
+        {
+            cout << "\nMaksimal panjang array adalah 20";
+        }
     }
 }
