@@ -35,3 +35,12 @@ void input()
         cin >> arr[i];
     }
 }
+
+// COMMIT 5: Membuat kerangka fungsi mergeSort
+void mergeSort(int low, int high)
+{
+    if (low >= high) // step 1
+    {
+        return; // step 1.a
+    }
+}
