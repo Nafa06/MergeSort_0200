@@ -84,4 +84,11 @@ void mergeSort(int low, int high)
         i++;
         k++;
     }
+
+    // COMMIT 9: Menyalin hasil penggabungan kembali ke array utama
+    for (int x = low; x <= high; x++) // salin array sementara ke array asli
+    {
+        arr[x] = B[x];
+    }
+
 }
