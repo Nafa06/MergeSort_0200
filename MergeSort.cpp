@@ -101,3 +101,10 @@ void output()
         }
         cout << endl;
     }
+//COMMIT 11: Menambahkan fungsi main untuk menjalankan program
+int main()
+{
+    input();             // Input data array
+    mergeSort(0, n - 1); // Jalankan Merge Sort
+    output();            // Tampilkan hasil setelah diurutkan
+}
