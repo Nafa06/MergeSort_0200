@@ -24,7 +24,7 @@ void input()
             cout << "\nMaksimal panjang array adalah 20";
         }
     }
-    // COMMIT 4: Menambahkan fungsi input nilai array 
+    // COMMIT 4: Menambahkan fungsi input nilai array
     cout << "\n-----------------------------" << endl;
     cout << "\nInputkan Isi element array" << endl;
     cout << "\n-----------------------------" << endl;
@@ -43,4 +43,11 @@ void mergeSort(int low, int high)
     {
         return; // step 1.a
     }
+    // COMMIT 6: Mengimplementasikan proses pembagian array di mergeSort
+    int mid = (low + high) / 2; // step 2
+
+    // step 3 - fungsi rekursi
+    mergeSort(low, mid);      // step 3.a
+    mergeSort(mid + 1, high); // step 3.b
+    
 }
